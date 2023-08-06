@@ -1,0 +1,538 @@
+@import "./reset.css";
+@import "./burger.css";
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.5s ease;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    background-image: url(../images/6fc1dafda45401d114a42d25343f1ce6.png);
+    opacity: 1;
+}
+
+button {
+    font-family: "Nunito";
+}
+
+b {
+    font-weight: 600;
+}
+
+header {
+    height: 75px;
+    display: flex;
+    position: fixed;
+    width: 92%;
+    padding: 0 60px 0 60px;
+    justify-content: space-around;
+    background-color: rgba(251, 251, 251, 0.95);
+    filter: drop-shadow(0px 4px 20px #000);
+    border-radius: 0 0 15px 15px;
+    z-index: 10;
+    
+}
+
+.logo {
+    width: 200px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+    padding-top: 13px;
+}
+
+.header-nav li {
+    transition: all 0.5s ease;
+}
+
+.header-nav-link {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.header-nav-link:hover {
+    color: #93D800;
+}
+
+.header-nav li:hover {
+    transform: scale(1.2);
+
+}
+
+.header-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 46px;
+    padding-right: 60px;
+}
+
+.header-socials img {
+    width: 38px;
+}
+
+.header-socials li {
+    transition: all 0.5s ease;
+}
+
+.header-socials li:hover {
+    transform: scale(1.2);
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-offer {
+    border-radius: 45px;
+    background: rgba(217, 217, 217, 0.65);
+    position: absolute ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 220px;
+    left: 200px;
+    width: 400px;
+    height: 320px;
+    padding: 0 20px;
+
+}
+
+.banner-offer h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.banner-offer p {
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 380px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;    
+}
+
+.banner-offer button {
+    position: relative;
+    width: 295px;
+    height: 55px;
+    margin-top: 38px;
+    border: none;
+    border-radius: 15px;
+    font-size: 26px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00DD23 0%, #93DC02 97.92%, #93D800 100%, rgba(217, 217, 217, 0.00) 100%);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.banner-offer button:hover {
+    width: 300px;
+    height: 65px;
+    transform: scale(1.06);
+}
+
+.banner-img {
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/99px_ru_wallpaper_273293_velshkorgi_na_progulke_v_osennem_parke.jpg);
+    background-repeat: no-repeat;
+    background-position: left 60% top 55% ;
+    border-radius: 10px;
+}
+
+.advantages {
+    margin: 60px 180px 0 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.advantages h2 {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.advantages-component {
+    display: flex;
+    gap: 40px;
+    margin-left: 90px;
+}
+
+.advantages-component img {
+    width: 160px;
+    height: 160px;
+}
+
+.advantages-title-wrapper {
+    font-size: 28px;
+
+}
+
+.advantages-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.services {
+    margin: 60px 90px 0 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.services h3 {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.services-component {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(217, 217, 217, 0.25);
+    border-radius: 30px;
+    max-width: 1020px;
+}
+
+.service-offer {
+    text-align: center;
+    max-width: 625px;
+    padding: 35px;
+}
+
+.service-offer-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.service-offer-text {
+    font-size: 24px;
+    font-weight:500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.service-offer-cost {
+    font-size: 28px;
+    font-weight:600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-offer button {
+    margin: 0 auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 15px;
+    width: 295px;
+    height: 55px;
+    font-size: 24px;
+    font-weight: 700;
+background: linear-gradient(90deg, #00DD23 0%, #93DC02 97.92%, #93D800 100%, rgba(217, 217, 217, 0.00) 100%);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.service-offer button:hover {
+    transform: scale(1.1);
+}
+
+.form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form h4 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.form p {
+    font-size: 26px;
+}
+
+.form-line {
+    width: 50vw;
+    height: 4px;
+    background-color: #7D7D7D;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.form-bg {
+    height: 300px;
+    width: 350px;
+    padding: 60px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: -2px 6px 8px 3px rgba(0, 0, 0, 0.30);
+    margin-bottom: 200px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form input {
+    border: none;
+    border: 2px solid #7D7D7D;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+.form form p {
+    font-size: 16px;
+}
+
+.form button {
+    border: none;
+    border-radius: 10px;
+    height: 55px;
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00DD23 0%, #93DC02 97.92%, #93D800 100%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+.form label {
+    display: flex;
+    margin-top: 55px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow:0px -4px 20px #000;
+    border-top-right-radius:  15px; ;
+    border-top-left-radius:  15px; ;
+    padding: 60px 90px;
+}
+
+.footer-contact {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+ footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-contact p {
+    margin-top: 20px ;
+
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+}
+
+.footer-links li:first-child {
+    font-weight: 600;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo img {
+    width: 320px;
+}
+
+.footer-logo p {
+    font-size: 20px;
+}
+
+.footer-logo span {
+    font-size: 24px;
+    color: #686868;
+}
+
+.footer-socials span {
+    margin-bottom: 10px;
+}
+
+.footer-socials ul {
+    margin: 15px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 15px;
+}
+
+.develop {
+    text-align: end;
+    padding-top: 150px;
+}
+
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color: #93DC02!important;
+}
+
+
+@media (max-width: 1140px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-contact {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .footer-contact p {
+        margin-top: 0;
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links ul {
+        display: flex;
+        gap: 20px;
+    }
+    .footer-logo {
+        align-items: center;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .header-menu
+        {
+        display: flex;
+        }
+    .header-nav {
+        display: none;
+    }
+    .header-socials {
+        display: none;
+    }
+    .services-component {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 920px) {
+    .advantages-component {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    .advantages {
+        margin: 40px 20px 0 20px;
+    }
+    .services-component {
+        width: 300px;
+    }
+    .service-offer button {
+        width: 175px;
+    }
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .banner-offer {
+        left: 10vw;
+        width: auto;
+    }
+    .header-menu {
+        left: 93vw;
+    }
+    .footer-links ul li {
+        text-align: center;
+    }
+    #menu-links.active {
+        left: 70vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer-contact {
+        font-size: 26px;
+    }
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-socials ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-socials ul img {
+        width: 68px;
+    }
+    .form p {
+        text-align: center;
+    }
+    .form-bg {
+        width: auto;
+        height: auto;
+        padding: 35px 20px;
+    }
+    .form form input {
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .form button {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .form label {
+        margin-top: 35px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .banner-offer {
+        left: 0;
+        padding: 0;
+    }
+    .banner-offer button {
+        width: 225px;
+    }
+    .header-menu {
+        left: 88vw;
+    }
+    #menu-links.active {
+        left: 58vw;
+    }
+}
