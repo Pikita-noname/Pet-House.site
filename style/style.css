@@ -18,6 +18,7 @@ main {
 
 button {
     font-family: "Nunito";
+    color: #000;
 }
 
 b {
@@ -518,6 +519,9 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     .form label {
         margin-top: 35px;
     }
+    .develop {
+        padding-top: 35px;
+    }
 
 }
 
@@ -534,5 +538,15 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     }
     #menu-links.active {
         left: 58vw;
+    }
+    .form h4 {
+        text-align: center;
+    }
+    .footer-contact {
+        text-wrap: nowrap;
+    }
+    .footer-logo span {
+        font-size: 18px;
+        text-wrap: nowrap;
     }
 }
