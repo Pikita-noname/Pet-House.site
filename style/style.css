@@ -431,6 +431,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     }
     header {
         justify-content: space-between;
+        border-radius: 0;
     }
     .header-menu
         {
@@ -443,7 +444,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         display: none;
     }
     .services-component {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
