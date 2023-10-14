@@ -409,6 +409,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        padding: 60px 0;
     }
     .footer-contact {
         display: flex;

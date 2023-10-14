@@ -4,7 +4,7 @@ async function ShowForm() {
     const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 
         const { value: formValues } = await Swal.fire({
-          title: 'Запони форму',
+          title: 'Заполни форму',
           confirmButtonText: 'Отправить',
           html:
             '<input placeholder = `Имя телефона`  id="swal-input1" class="swal2-input">' +
@@ -19,7 +19,6 @@ async function ShowForm() {
         })
         
         if (formValues) {
-            console.log(formValues)
           Swal.fire({
             icon:`success`,
             title:`Отправлено`
@@ -32,7 +31,7 @@ async function ShowForm() {
         }
         else {
           Swal.fire({
-            title:`Первый выгул Бесплатно!`,
+            title:`Вы уверены что не хотите?<br><bold>Это абсолютно бесплатно!<bold>`,
             icon:`warning`
           })
         }
